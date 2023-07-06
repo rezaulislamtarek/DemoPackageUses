@@ -11,6 +11,7 @@
 		0B7A334D2A56E7AE00CAD05C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7A334C2A56E7AE00CAD05C /* ContentView.swift */; };
 		0B7A334F2A56E7B800CAD05C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B7A334E2A56E7B800CAD05C /* Assets.xcassets */; };
 		0B7A33522A56E7B800CAD05C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B7A33512A56E7B800CAD05C /* Preview Assets.xcassets */; };
+		0B7A335A2A56E81200CAD05C /* MobileAppDev in Frameworks */ = {isa = PBXBuildFile; productRef = 0B7A33592A56E81200CAD05C /* MobileAppDev */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B7A335A2A56E81200CAD05C /* MobileAppDev in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = DemoPackageUses;
+			packageProductDependencies = (
+				0B7A33592A56E81200CAD05C /* MobileAppDev */,
+			);
 			productName = DemoPackageUses;
 			productReference = 0B7A33472A56E7AE00CAD05C /* DemoPackageUses.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = 0B7A333E2A56E7AE00CAD05C;
+			packageReferences = (
+				0B7A33582A56E81100CAD05C /* XCRemoteSwiftPackageReference "MobileAppDev" */,
+			);
 			productRefGroup = 0B7A33482A56E7AE00CAD05C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -275,6 +283,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,6 +313,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -339,6 +349,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0B7A33582A56E81100CAD05C /* XCRemoteSwiftPackageReference "MobileAppDev" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/rezaulislamtarek/MobileAppDev.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0B7A33592A56E81200CAD05C /* MobileAppDev */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0B7A33582A56E81100CAD05C /* XCRemoteSwiftPackageReference "MobileAppDev" */;
+			productName = MobileAppDev;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0B7A333F2A56E7AE00CAD05C /* Project object */;
 }

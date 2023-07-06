@@ -6,16 +6,18 @@
 //
 
 import SwiftUI
+import MobileAppDev
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        ZStack {
+            VStack {
+                DevListView()
+                Text("Kmn aso bondhura?")
+                Spacer()
+            }
+            .padding()
         }
-        .padding()
     }
 }
 
